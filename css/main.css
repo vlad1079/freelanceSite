@@ -20,25 +20,24 @@ header.header {
   position: relative;
   font-family: "Poppins", sans-serif;
 }
-header.header object {
+header.header div.header_logo_left {
   position: absolute;
-  max-width: 1920px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-header.header object svg {
-  max-width: 1920px;
+  width: 18%;
+  height: 69px;
+  background: #00AE9A;
+  left: 0;
+  top: 0;
 }
 
 .container {
-  max-width: 1166px;
+  width: 1196px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .header_top {
+  position: relative;
   max-width: 1166px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,11 +52,30 @@ header.header object svg {
           align-items: center;
   font-family: "Poppins", sans-serif;
 }
+.header_top .header_top_logo_cont {
+  position: absolute;
+  width: 180px;
+  height: 69px;
+  background: #00AE9A;
+  left: 0;
+  top: 0;
+}
+.header_top .header_top_logo_cont::after {
+  content: "";
+  position: absolute;
+  width: 221px;
+  height: 69px;
+  background: #00AE9A;
+  border-radius: 0 0 50px 0;
+  left: 0;
+  top: 0;
+}
 .header_top .logo {
   font-weight: 800;
   font-size: 20px;
   line-height: 28px;
   text-transform: capitalize;
+  z-index: 1;
   color: #EB5858;
 }
 .header_top .logo span {
@@ -75,6 +93,9 @@ header.header object svg {
   line-height: 19px;
   color: #000000;
   z-index: 1;
+}
+.header_top .header_nav > li > a {
+  color: #000;
 }
 .header_top .header_tel_price_log {
   display: -webkit-box;
