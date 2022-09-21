@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, button {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header.header {
+  max-width: 1920px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+header.header object {
+  position: absolute;
+  max-width: 1920px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header.header object svg {
+  max-width: 1920px;
+}
+
+.container {
+  max-width: 1166px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header_top {
+  max-width: 1166px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+  padding-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.header_top .logo {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #EB5858;
+}
+.header_top .logo span {
+  color: #fff;
+}
+.header_top .header_nav {
+  max-width: 374px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  z-index: 1;
+}
+.header_top .header_tel_price_log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 22px;
+     -moz-column-gap: 22px;
+          column-gap: 22px;
+}
+.header_top .header_tel_price_log .header_tel > span {
+  display: block;
+}
+.header_top .header_tel_price_log .header_price {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #EB5858;
+  border-radius: 6px;
+  background-color: #EB5858;
+  color: #fff;
+}
+.header_top .header_tel_price_log .header_log {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #EB5858;
+  border: 2px solid #EB5858;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
